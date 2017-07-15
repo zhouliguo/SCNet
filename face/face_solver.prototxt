@@ -1,0 +1,20 @@
+net: "examples/face/face_train_test.prototxt"
+test_iter: 100 
+test_interval: 2000
+
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.8
+stepsize: 50000
+#stepvalue: 64000
+#stepvalue: 96000
+#stepvalue: 112000
+max_iter: 500000
+
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 100000
+snapshot_prefix: "examples/face/face"
+
+solver_mode: GPU
